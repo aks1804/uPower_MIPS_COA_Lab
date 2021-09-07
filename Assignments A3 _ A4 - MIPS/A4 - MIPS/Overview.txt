@@ -1,0 +1,66 @@
+Computer Organisation and Architecture
+Assignment 4
+MIPS Datapath
+
+Group Members
+1. Pranav Vigneshwar Kumar - 181CO239
+2. Ankush Chandrashekar - 181CO206
+3. Mohammed Rushad - 181CO232
+4. Akshat Nambiar - 181CO204
+
+
+R Type
+
+add $3, $1, $2 
+sub $4, $1, $2
+and $5, $1, $2
+or $6, $1, $2
+
+Load
+
+lw $1, 1($0)
+
+
+Branch
+
+beq $1, $2, 1
+dummy instruction // this intruction is skipped
+dummy instruction // control goes here after beq
+
+
+
+
+Program 1 - Load two numbers, add them and store the sum
+
+lw $1, 1($0)
+lw $2, 2($0)
+add $3, $1, $2
+sw $3, 3($0)
+
+Instruction in Binary
+
+10001100000000010000000000000001
+10001100000000100000000000000010
+00000000001000100001100000100000
+10101100000000110000000000000011
+
+
+Program 2 - Sum of array elements
+
+lw $2, 1($8)
+add $3, $0, $7
+add $7, $2, $3
+add $1, $0, $8
+add $8, $1, $5
+bne $1, $4, -6
+sw $7, 1($8)
+
+Instructions in Binary
+
+10001101000000100000000000000001
+00000000000001110001100000100000
+00000000010000110011100000100000 
+00000001000000000000100000100000 
+00000000001001010100000000100000 
+00010100001001001111111111111010 
+10101101000001110000000000000001

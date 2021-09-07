@@ -1,0 +1,16 @@
+.data
+A: .word 10
+B: .word 12
+.text
+main:
+la R5, A
+la R6, B
+lwz R10, 0(R5)
+lwz R11, 0(R6)
+add R12, R10, R11
+addi R2, R0, 1
+addi R4, R12, 0
+sc lev
+addi R2, R0, 10
+sc lev
+

@@ -1,0 +1,214 @@
+$date
+	Sun May 24 21:51:09 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_Load $end
+$var reg 1 ! clk $end
+$scope module tb $end
+$var wire 1 ! clock $end
+$var wire 32 " write_data [31:0] $end
+$var wire 5 # shamt [4:0] $end
+$var wire 32 $ rt_content [31:0] $end
+$var wire 5 % rt [4:0] $end
+$var wire 32 & rs_content [31:0] $end
+$var wire 5 ' rs [4:0] $end
+$var wire 5 ( rd [4:0] $end
+$var wire 6 ) opcode [5:0] $end
+$var wire 32 * memory_read_data [31:0] $end
+$var wire 32 + instruction [31:0] $end
+$var wire 32 , immediate [31:0] $end
+$var wire 6 - funct [5:0] $end
+$var wire 1 . flag $end
+$var wire 26 / address [25:0] $end
+$var wire 4 0 ALUInput [3:0] $end
+$var reg 1 1 ALUSrc $end
+$var reg 2 2 ALUop [1:0] $end
+$var reg 1 3 MemRead $end
+$var reg 1 4 MemToReg $end
+$var reg 1 5 MemWrite $end
+$var reg 32 6 PC [31:0] $end
+$var reg 1 7 PCSrc $end
+$var reg 1 8 RegDst $end
+$var reg 1 9 RegRead $end
+$var reg 1 : RegWrite $end
+$var reg 1 ; branch_signal $end
+$scope module p1 $end
+$var wire 32 < program_counter [31:0] $end
+$var reg 32 = instruction [31:0] $end
+$upscope $end
+$scope module p2 $end
+$var wire 32 > instruction [31:0] $end
+$var wire 32 ? p_count [31:0] $end
+$var wire 6 @ opcode [5:0] $end
+$var reg 26 A address [25:0] $end
+$var reg 32 B extended_immediate [31:0] $end
+$var reg 6 C funct [5:0] $end
+$var reg 5 D rd [4:0] $end
+$var reg 5 E rs [4:0] $end
+$var reg 5 F rt [4:0] $end
+$var reg 5 G shamt [4:0] $end
+$upscope $end
+$scope module p3 $end
+$var wire 2 H ALUop [1:0] $end
+$var wire 6 I funct [5:0] $end
+$var reg 4 J ALUInput [3:0] $end
+$upscope $end
+$scope module p4 $end
+$var wire 4 K ALUInput [3:0] $end
+$var wire 1 1 ALUSrc $end
+$var wire 32 L immediate [31:0] $end
+$var wire 5 M rs [4:0] $end
+$var wire 5 N rt [4:0] $end
+$var wire 32 O rt_content [31:0] $end
+$var wire 32 P rs_content [31:0] $end
+$var reg 32 Q ALU_result [31:0] $end
+$var reg 1 . flag $end
+$var reg 32 R signed_rs [31:0] $end
+$var reg 32 S signed_rt [31:0] $end
+$upscope $end
+$scope module p5 $end
+$var wire 1 3 MemRead $end
+$var wire 1 5 MemWrite $end
+$var wire 32 T address [31:0] $end
+$var wire 6 U opcode [5:0] $end
+$var wire 32 V write_data [31:0] $end
+$var reg 32 W read_data [31:0] $end
+$upscope $end
+$scope module p6 $end
+$var wire 1 4 MemToReg $end
+$var wire 1 8 RegDst $end
+$var wire 1 9 RegRead $end
+$var wire 1 : RegWrite $end
+$var wire 1 ! clk $end
+$var wire 6 X opcode [5:0] $end
+$var wire 5 Y rd [4:0] $end
+$var wire 32 Z read_mem_data [31:0] $end
+$var wire 5 [ rs [4:0] $end
+$var wire 5 \ rt [4:0] $end
+$var wire 32 ] write_data [31:0] $end
+$var reg 32 ^ read_data_1 [31:0] $end
+$var reg 32 _ read_data_2 [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111111 _
+b0 ^
+b101 ]
+b101 \
+b0 [
+b111111 Z
+bx Y
+b100011 X
+b111111 W
+b11111111 V
+b100011 U
+b101 T
+b101 S
+b0 R
+b101 Q
+b0 P
+b11111111 O
+b101 N
+b0 M
+b101 L
+b10 K
+b10 J
+bx I
+b0 H
+bx G
+b101 F
+b0 E
+bx D
+bx C
+b101 B
+bx A
+b100011 @
+b0 ?
+b10001100000001010000000000000101 >
+b10001100000001010000000000000101 =
+b0 <
+0;
+1:
+19
+08
+07
+b0 6
+05
+14
+13
+b0 2
+11
+b10 0
+bx /
+x.
+bx -
+b101 ,
+b10001100000001010000000000000101 +
+b111111 *
+b100011 )
+bx (
+b0 '
+b0 &
+b101 %
+b11111111 $
+bx #
+b101 "
+0!
+$end
+#100
+bx *
+bx W
+bx Z
+bx "
+bx Q
+bx T
+bx ]
+bx S
+bx R
+bx $
+bx O
+bx V
+bx _
+bx &
+bx P
+bx ^
+bx ,
+bx B
+bx L
+bx '
+bx E
+bx M
+bx [
+bx %
+bx F
+bx N
+bx \
+bx )
+bx @
+bx U
+bx X
+bx +
+bx =
+bx >
+b1 6
+b1 <
+b1 ?
+1!
+#200
+0!
+#300
+b10 6
+b10 <
+b10 ?
+1!
+#400
+0!
+#490

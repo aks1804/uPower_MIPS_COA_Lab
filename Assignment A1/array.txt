@@ -1,0 +1,19 @@
+.data
+arr: .word 14, 15
+.text
+main:
+la R10, arr
+addi R11, R10, 8
+loop:
+cmp 7, R10, R11
+bc 5, 30, endloop
+lwz R13, 0(R10)
+addi R10, R10, 4
+add R12, R12, R13
+b loop
+endloop:
+addi R2, R0, 1
+addi R4, R12, 0
+sc lev
+addi R2, R0, 10
+sc lev
