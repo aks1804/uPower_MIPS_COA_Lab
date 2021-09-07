@@ -1,0 +1,269 @@
+$date
+	Wed Jun 03 01:54:53 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_Branch $end
+$var reg 1 ! clk $end
+$scope module tb $end
+$var wire 1 ! clock $end
+$var wire 9 " xoxo [8:0] $end
+$var wire 10 # xox [9:0] $end
+$var wire 2 $ xods [1:0] $end
+$var wire 64 % write_data [63:0] $end
+$var wire 16 & si [15:0] $end
+$var wire 64 ' rt_content [63:0] $end
+$var wire 5 ( rt [4:0] $end
+$var wire 64 ) rs_content [63:0] $end
+$var wire 5 * rs [4:0] $end
+$var wire 64 + rd_content [63:0] $end
+$var wire 5 , rd [4:0] $end
+$var wire 1 - rc $end
+$var wire 6 . po [5:0] $end
+$var wire 1 / oe $end
+$var wire 64 0 memory_read_data [63:0] $end
+$var wire 1 1 lk $end
+$var wire 24 2 li [23:0] $end
+$var wire 32 3 instruction [31:0] $end
+$var wire 1 4 flag $end
+$var wire 64 5 ds [63:0] $end
+$var wire 5 6 bo [4:0] $end
+$var wire 5 7 bi [4:0] $end
+$var wire 14 8 bd [13:0] $end
+$var wire 1 9 aa $end
+$var wire 4 : ALUInput [3:0] $end
+$var reg 1 ; ALUSrc $end
+$var reg 2 < ALUop [1:0] $end
+$var reg 1 = Branch $end
+$var reg 1 > MemRead $end
+$var reg 1 ? MemToReg $end
+$var reg 1 @ MemWrite $end
+$var reg 32 A PC [31:0] $end
+$var reg 1 B PCSrc $end
+$var reg 1 C RegRead $end
+$var reg 1 D RegWrite $end
+$scope module p1 $end
+$var wire 32 E program_counter [31:0] $end
+$var reg 32 F instruction [31:0] $end
+$upscope $end
+$scope module p2 $end
+$var wire 32 G instruction [31:0] $end
+$var wire 32 H p_count [31:0] $end
+$var wire 6 I po [5:0] $end
+$var reg 1 9 aa $end
+$var reg 14 J bd [13:0] $end
+$var reg 5 K bi [4:0] $end
+$var reg 5 L bo [4:0] $end
+$var reg 64 M ds [63:0] $end
+$var reg 24 N li [23:0] $end
+$var reg 1 1 lk $end
+$var reg 1 / oe $end
+$var reg 1 - rc $end
+$var reg 5 O rd [4:0] $end
+$var reg 5 P rs [4:0] $end
+$var reg 5 Q rt [4:0] $end
+$var reg 16 R si [15:0] $end
+$var reg 2 S xods [1:0] $end
+$var reg 10 T xox [9:0] $end
+$var reg 9 U xoxo [8:0] $end
+$upscope $end
+$scope module p4 $end
+$var wire 2 V ALUop [1:0] $end
+$var wire 2 W xods [1:0] $end
+$var wire 10 X xox [9:0] $end
+$var wire 9 Y xoxo [8:0] $end
+$var reg 4 Z ALUInput [3:0] $end
+$upscope $end
+$scope module p5 $end
+$var wire 4 [ ALUInput [3:0] $end
+$var wire 1 ; ALUSrc $end
+$var wire 64 \ ds [63:0] $end
+$var wire 64 ] rt_content [63:0] $end
+$var wire 64 ^ rs_content [63:0] $end
+$var reg 64 _ ALU_result [63:0] $end
+$var reg 1 4 flag $end
+$var reg 64 ` signed_rs [63:0] $end
+$var reg 64 a signed_rt [63:0] $end
+$upscope $end
+$scope module p6 $end
+$var wire 1 > MemRead $end
+$var wire 1 @ MemWrite $end
+$var wire 64 b address [63:0] $end
+$var wire 6 c po [5:0] $end
+$var wire 5 d rd [4:0] $end
+$var wire 64 e write_data [63:0] $end
+$var reg 64 f read_data [63:0] $end
+$upscope $end
+$scope module p7 $end
+$var wire 1 ? MemToReg $end
+$var wire 1 C RegRead $end
+$var wire 1 D RegWrite $end
+$var wire 5 g bi [4:0] $end
+$var wire 5 h bo [4:0] $end
+$var wire 1 ! clk $end
+$var wire 6 i po [5:0] $end
+$var wire 5 j rd [4:0] $end
+$var wire 64 k read_mem_data [63:0] $end
+$var wire 5 l rs [4:0] $end
+$var wire 5 m rt [4:0] $end
+$var wire 64 n write_data [63:0] $end
+$var reg 64 o read_data_1 [63:0] $end
+$var reg 64 p read_data_2 [63:0] $end
+$var reg 64 q read_data_3 [63:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx q
+b0 p
+b0 o
+b0 n
+b111 m
+b0 l
+bx k
+b11 j
+b11111 i
+b0 h
+b0 g
+bx f
+bx e
+b11 d
+b11111 c
+b0 b
+b0 a
+b0 `
+b0 _
+b0 ^
+b0 ]
+b0 \
+b110 [
+b110 Z
+b100001010 Y
+b0 X
+b0 W
+b1 V
+b100001010 U
+b0 T
+b0 S
+b0 R
+b111 Q
+b0 P
+b11 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+b11111 I
+b0 H
+b1111100011000000011101000010100 G
+b1111100011000000011101000010100 F
+b0 E
+0D
+1C
+1B
+b0 A
+0@
+0?
+0>
+1=
+b1 <
+0;
+b110 :
+09
+b0 8
+b0 7
+b0 6
+b0 5
+14
+b1111100011000000011101000010100 3
+b0 2
+01
+bx 0
+0/
+b11111 .
+0-
+b11 ,
+bx +
+b0 *
+b0 )
+b111 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b100001010 "
+0!
+$end
+#10
+04
+b1 %
+b1 _
+b1 b
+b1 n
+b1 `
+b110 :
+b110 Z
+b110 [
+b1 )
+b1 ^
+b1 o
+19
+b10 7
+b10 K
+b10 g
+b1 6
+b1 L
+b1 h
+b0 "
+b0 U
+b0 Y
+b0 ,
+b0 O
+b0 d
+b0 j
+b0 (
+b0 Q
+b0 m
+b10011 .
+b10011 I
+b10011 c
+b10011 i
+b1001100001000100000000000000010 3
+b1001100001000100000000000000010 F
+b1001100001000100000000000000010 G
+b1 A
+b1 E
+b1 H
+1!
+#20
+0!
+#30
+09
+b0 7
+b0 K
+b0 g
+b0 6
+b0 L
+b0 h
+b0 .
+b0 I
+b0 c
+b0 i
+b0 3
+b0 F
+b0 G
+b10 A
+b10 E
+b10 H
+1!
+#40
+0!
+#49

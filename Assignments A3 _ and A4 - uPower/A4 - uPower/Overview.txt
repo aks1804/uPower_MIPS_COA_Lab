@@ -1,0 +1,66 @@
+Computer Organisation and Architecture
+Assignment 4
+uPower Datapath
+
+Group Members
+1. Pranav Vigneshwar Kumar - 181CO239
+2. Ankush Chandrashekar - 181CO206
+3. Mohammed Rushad - 181CO232
+4. Akshat Nambiar - 181CO204
+
+X Type
+
+add $3, $1, $2
+subf $4, $1, $2
+and $5, $1, $2
+or $6, $1, $2
+
+Load
+
+ld $1, 1($0)
+
+Branch
+
+dummy instruction
+bca $1, $2, 3
+dummy instruction
+dummy instruction // branch will go to this intruction if condition is satified
+
+
+
+Program 1 - Load two numbers, compute sum, and store back the sum
+
+ld $1, 1($0)
+ld $2, 2($0)
+add $3, $1, $2
+std $3, 3($0)
+
+Instructions in Binary
+
+11101000001000000000000000000100
+11101000010000000000000000001000
+01111100011000010001001000010100
+10010000011000000000000000001100
+
+
+Program 2 - Sum of array elements
+
+ld $2, 0($8)
+add $3, $0, $7
+add $7, $2, $3
+add $1, $0, $8
+add $8, $1, $5
+bca $8, $12, 8
+ba 0
+std $7, 6($0) 
+
+Instructions in Binary
+
+11101000010010000000000000000100
+01111100011000000011101000010100
+01111100111000100001101000010100
+01111100001000000100001000010100
+01111101000000010010101000010100
+01001101000011000000000000011110
+01001000000000000000000000000010
+10010000111000000000000000011000
