@@ -5,7 +5,7 @@ Weekly Execrises and Assignments from CO250 - Computer Organisation and Architec
 
 Assignments:
 
-A0 - Simulate MIPS Assembly in SPIM
+A0 - Simulate MIPS Assembly in SPIM\n
 A1 - uPOWER Assembler written in Python and uPOWER Simulator written in C++
 A2 - MIPS and uPower ALU Design in Verilog
 A3_A4 MIPS - MIPS Datapath written in Verilog
