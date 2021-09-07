@@ -1,7 +1,7 @@
-# CompOrg_Arc_Lab
-Computer Organisation and Architecture Lab @ NIT-Surathkal
+# uPower_MIPS_COA_Lab
+MIPS and uPower Datapath Design for Computer Organisation and Architecture Lab @ NIT-Surathkal
 
-Weekly Execrises and Assignments from CO250 - Computer Organisation and Architecture Lab at NIT-Surathkal. This course was conducted during the 4th semister (Jan-April 2020).
+Assignments from CO250 - Computer Organisation and Architecture Lab at NIT-Surathkal. This course was conducted during the 4th semister (Jan-April 2020).
 
 Assignments:
 
